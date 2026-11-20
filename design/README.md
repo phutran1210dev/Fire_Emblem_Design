@@ -32,6 +32,19 @@ phase-based turns, terrain bonuses and skill builds.
 | Map events | [map-event-trigger-flowchart.png](diagrams/map-event-trigger-flowchart.png) |
 | Skill resolution | [skill-resolution-flowchart.png](diagrams/skill-resolution-flowchart.png) |
 
+Proposed flows from the [2026-11-21 differentiation review](reviews/2026-11-21-gameplay-differentiation.md)
+(interactive HTML, open in a browser; not adopted into the GDDs yet):
+
+| Flow | File |
+|------|------|
+| Combat resolution (Pincer, counter, follow-up, Momentum) | [combat-resolution.html](diagrams/combat-resolution.html) |
+| Battle round loop (living battlefield, instant win) | [battle-round.html](diagrams/battle-round.html) |
+| Unit progression (Oath branches, Wounded / Classic) | [unit-progression.html](diagrams/unit-progression.html) |
+
+## Reviews
+
+- [2026-11-21 · Gameplay differentiation](reviews/2026-11-21-gameplay-differentiation.md): 4 proposed pillars + gameplay gaps
+
 ## Where the old files went
 
 | Old file | New page |

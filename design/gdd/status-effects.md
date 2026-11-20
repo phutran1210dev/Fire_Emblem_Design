@@ -2,6 +2,9 @@
 
 > From: `StatusEffects.md`.
 
+> **Approved change (2026-11-21, [review](../reviews/2026-11-21-gameplay-differentiation.md)):** Burn defined (Burning tile or fire crit). All statuses tick in the Environment Phase.
+> Not yet written into the sections below — next `/design-system` pass.
+
 ## Overview
 
 Timed buffs and debuffs that change stats, deal or heal damage over time, or

@@ -33,7 +33,7 @@ phase-based turns, terrain bonuses and skill builds.
 | Skill resolution | [skill-resolution-flowchart.png](diagrams/skill-resolution-flowchart.png) |
 
 Proposed flows from the [2026-11-21 differentiation review](reviews/2026-11-21-gameplay-differentiation.md)
-(interactive HTML, open in a browser; not adopted into the GDDs yet):
+(interactive HTML, open in a browser; approved 2026-11-21, being written into the GDDs):
 
 | Flow | File |
 |------|------|

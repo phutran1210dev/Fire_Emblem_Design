@@ -28,4 +28,6 @@ time, starting with Foundation.
 
 Not yet designed (named in the roadmap): Cutscene / dialogue, Audio, Animation / VFX, HUD & menus.
 
+Approved changes waiting to be written in: see the note at the top of each affected GDD and the [differentiation review](../reviews/2026-11-21-gameplay-differentiation.md).
+
 Cross-cutting decisions: [open-questions.md](open-questions.md) (43 items).

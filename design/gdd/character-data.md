@@ -2,6 +2,9 @@
 
 > From: `Character_Template.md`. This is the data schema every unit uses.
 
+> **Approved change (2026-11-21, [review](../reviews/2026-11-21-gameplay-differentiation.md)):** No per-unit MP/SP (Momentum is team-wide). Add `oath` per tier and a `wounded` status for Wounded mode.
+> Not yet written into the sections below — next `/design-system` pass.
+
 ## Overview
 
 A unit is one JSON object: identity, stats, proficiencies, inventory, skills,

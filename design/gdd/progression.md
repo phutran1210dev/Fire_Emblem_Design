@@ -2,6 +2,9 @@
 
 > Merged from: `LevelUp_Growth_System.md`, parts of `Character_Template.md`.
 
+> **Approved change (2026-11-21, [review](../reviews/2026-11-21-gameplay-differentiation.md)):** 10 levels per tier (promotion about every 5 chapters). Promotion requires Lv 10 + Oath Sigil.
+> Not yet written into the sections below — next `/design-system` pass.
+
 ## Overview
 
 Units earn EXP; at 100 EXP they level up and roll each stat against a growth

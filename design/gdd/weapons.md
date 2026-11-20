@@ -2,6 +2,9 @@
 
 > From: `WeaponClass_Tree.md`. Class ↔ weapon mapping lives in `class-system.md`.
 
+> **Approved change (2026-11-21, [review](../reviews/2026-11-21-gameplay-differentiation.md)):** Tomes get an element (fire / ice / thunder / wind). Weight lowers Attack Speed: AS = SPD − max(0, weight − STR/2).
+> Not yet written into the sections below — next `/design-system` pass.
+
 ## Overview
 
 Nine weapon types. Sword / Axe / Lance form the triangle (`combat-system.md`);

@@ -2,6 +2,9 @@
 
 > Merged from: `Map_Terrain_Bonus.md`, `Map_Design_Examples.md`.
 
+> **Approved change (2026-11-21, [review](../reviews/2026-11-21-gameplay-differentiation.md)):** P1 Living Battlefield: Burning → Ash, Ice over water, thunder chains through water, wind pushes and puts out fire. Forced movement (Shove / Pull / Swap); pushes off cliffs Stun + 5 dmg instead of killing.
+> Not yet written into the sections below — next `/design-system` pass.
+
 ## Overview
 
 Every tile has a terrain type with a movement cost and defensive bonuses.

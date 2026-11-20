@@ -3,6 +3,9 @@
 > Merged from: `Combat_Mechanics.md`, `Combat_Flow.md`, `Diagram_Summary.md` (section 2).
 > Diagram: [combat-flowchart.png](../diagrams/combat-flowchart.png)
 
+> **Approved change (2026-11-21, [review](../reviews/2026-11-21-gameplay-differentiation.md)):** P2 Pincer (+15% hit, +2 dmg, no counter, +1 Momentum); counter if in range; follow-up AS ≥ foe AS + 4; combat forecast UI; clamp hit/crit 0–100; crit ×2.5 or Dagger crit 10%. P3 Momentum gains from combat.
+> Not yet written into the sections below — next `/design-system` pass.
+
 ## Overview
 
 One attacker strikes one target. The result depends on weapon stats, the

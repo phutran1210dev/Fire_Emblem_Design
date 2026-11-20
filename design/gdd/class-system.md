@@ -4,6 +4,9 @@
 > `Character_Weapon Mapping.md`, `Diagram_Summary.md` (section 3).
 > Diagram: [promotion-flowchart.png](../diagrams/promotion-flowchart.png)
 
+> **Approved change (2026-11-21, [review](../reviews/2026-11-21-gameplay-differentiation.md)):** P4 Oath promotions: two branches at Tier 2 and Tier 4. Flat per-class promotion bonuses replace %. Per-class Tier 1 base stats. Rename borrowed terms (Master Seal → Oath Sigil, etc.). First slice: 4 lines × Tier 1–2.
+> Not yet written into the sections below — next `/design-system` pass.
+
 ## Overview
 
 Nine class lines, each with five tiers. A unit at the level cap with a

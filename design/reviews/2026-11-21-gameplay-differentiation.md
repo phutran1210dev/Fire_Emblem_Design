@@ -1,8 +1,9 @@
 # Review: Làm gameplay khác biệt hơn
 
 > Ngày: 2026-11-21 · Phạm vi: toàn bộ `design/gdd/` và `production/roadmap.md`
-> Trạng thái: **ĐỀ XUẤT**. Chưa có gì được đưa vào GDD. Mỗi mục cần bạn chọn
-> Đồng ý / Sửa / Bỏ; sau đó cập nhật GDD tương ứng bằng `/design-system`.
+> Trạng thái: **ĐÃ DUYỆT TOÀN BỘ (2026-11-21)**: P1–P4, mọi mục ở bảng 3, cả hai chế độ
+> Classic + Wounded, và đổi tên thuật ngữ. Các GDD liên quan đã có ghi chú "Approved change";
+> nội dung chi tiết sẽ được viết vào GDD bằng `/design-system`.
 
 ## 1. Kết luận nhanh
 

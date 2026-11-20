@@ -3,6 +3,9 @@
 > Merged from: `Gameplay_Loop.md`, `BattleFlow.md`, `Victory_Conditions.md`,
 > `Diagram_Summary.md` (section 1). Diagram: [game-loop-flowchart.png](../diagrams/game-loop-flowchart.png)
 
+> **Approved change (2026-11-21, [review](../reviews/2026-11-21-gameplay-differentiation.md)):** Seize / Boss Kill win immediately. Momentum −1 at Player Phase start. Environment Phase resolves terrain and status ticks. Two defeat modes: Classic (permadeath) and Wounded (out 1 chapter).
+> Not yet written into the sections below — next `/design-system` pass.
+
 ## Overview
 
 A phase-based tactical RPG on a grid. Each round runs every side's phase in a

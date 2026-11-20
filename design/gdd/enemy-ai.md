@@ -2,6 +2,9 @@
 
 > From: `Enemy_AI.md`.
 
+> **Approved change (2026-11-21, [review](../reviews/2026-11-21-gameplay-differentiation.md)):** Tie-break: can kill → lowest HP → nearest → lowest id. AI avoids and exploits Burning tiles. Bosses telegraph next turn's skill area.
+> Not yet written into the sections below — next `/design-system` pass.
+
 ## Overview
 
 Each enemy has a behaviour type and scores possible targets and moves, then

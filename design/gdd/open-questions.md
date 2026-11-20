@@ -4,35 +4,37 @@ Found while merging the original 27 design files. Each needs a decision before
 the related system is built. Mark an item **DECIDED: ...** when resolved and
 update the GDD it points to.
 
+14 items were decided on 2026-11-21 by the [differentiation review](../reviews/2026-11-21-gameplay-differentiation.md).
+
 ## Core loop
 
 | # | Topic | Question | GDD |
 |---|-------|----------|-----|
 | Q1 | Preparation Phase | Named in the loop, never defined. Unit selection? Deployment slots? Shop? | game-loop |
-| Q2 | Win check timing | Only checked at end of round? A Seize or Boss Kill should probably end the battle immediately. | game-loop |
-| Q43 | Phase vs timeline | Phase model (game-loop) or SPD timeline (turn-order-timeline)? They are exclusive. | game-loop, turn-order-timeline |
+| Q2 | Win check timing | **DECIDED:** Seize / Boss Kill win immediately; other goals checked at end of round. | game-loop |
+| Q43 | Phase vs timeline | **DECIDED:** Phase model kept; timeline stays optional / not planned. | game-loop, turn-order-timeline |
 
 ## Combat
 
 | # | Topic | Question | GDD |
 |---|-------|----------|-----|
-| Q3 | Counter-attacks | Combat_Flow says the defender "may counterattack". Does every defender in range counter (genre standard), or only with the Counter skill? | combat-system |
-| Q4 | Follow-up attacks | No rule for attacking twice. SPD currently only affects avoid. Add `SPD ≥ enemy SPD + 4 → double`? | combat-system |
+| Q3 | Counter-attacks | **DECIDED:** Defender counters if the attacker is in its weapon range, unless Pincered. | combat-system |
+| Q4 | Follow-up attacks | **DECIDED:** Follow-up when AS ≥ foe AS + 4; AS = SPD − max(0, weight − STR/2). | combat-system |
 | Q5 | Terrain in hit | Terrain gives Avoid/DEF/RES bonuses, but the hit and damage formulas do not include them. | combat-system, terrain-and-maps |
-| Q6 | Undefined weapons | Weakness table mentions Hammer, Wind Tome, "heavy weapons", Silence, anti-magic — none exist as weapon types. | combat-system |
+| Q6 | Undefined weapons | **DECIDED:** Tomes get an element (fire / ice / thunder / wind). Other undefined weakness sources: rename or drop when class-system is rewritten. | combat-system |
 | Q7 | Spear vs Lance | Two weapon types. Is Spear in the triangle? Does Lance get anti-cavalry? | weapons |
 | Q8 | EXP formula | "Based on damage or kill" — no numbers. | combat-system, progression |
-| Q9 | Clamping | Hit and crit can go below 0 or above 100; clamp to 0–100? Crit ×3 is very high next to FE-style stats; confirm. | combat-system |
+| Q9 | Clamping | **DECIDED:** Clamp hit and crit to 0–100. Crit multiplier ×2.5 (or Dagger crit 10%) — pick in tuning. | combat-system |
 
 ## Classes & progression
 
 | # | Topic | Question | GDD |
 |---|-------|----------|-----|
-| Q10 | Rounding | Promotion % gives decimals (SPD 5.5). Floor, round, or keep hidden fractions? | class-system |
-| Q11 | Promotion skills | Promotion_Flow: T3 = Rally Defense. ClassSkillTree: T3 Lv5 = Rally Speed. Which? | class-system, skill-system |
+| Q10 | Rounding | **DECIDED:** Flat per-class promotion bonuses replace % scaling. | class-system |
+| Q11 | Promotion skills | **DECIDED:** Replaced by Oath branches (P4); skill lists rewritten per Oath. | class-system, skill-system |
 | Q12 | Base stats | Every Tier 1 class has identical base stats, and STR/MAG share one value. Per-class bases needed. | class-system |
 | Q13 | Class tags | Which classes are Cavalry / Armored / Flying / Infantry? Needed for weakness and movement. | class-system, terrain-and-maps |
-| Q14 | Branching | "Some classes may branch" but the tree is linear. | class-system |
+| Q14 | Branching | **DECIDED:** Branch (two Oaths) at Tier 2 and Tier 4. | class-system |
 | Q15 | SKL growth mod | Class growth-mod table has no SKL column. | progression |
 | Q16 | Stat caps | "Caps increase per tier" — no values. | progression |
 | Q19 | Example tier | Lyra is a "Falcon Knight" with `tier: 3`; the tree puts Falcon Knight at Tier 2. | character-data |
@@ -41,14 +43,14 @@ update the GDD it points to.
 
 | # | Topic | Question | GDD |
 |---|-------|----------|-----|
-| Q17 | MP / SP | Skills cost MP/SP but units have no `mp`/`sp` field. Which resource is used? | character-data, skill-system |
+| Q17 | MP / SP | **DECIDED:** Shared team Momentum 0–10 replaces MP/SP. | character-data, skill-system |
 | Q18 | Growth field | Units have no `growth` field in the template. | character-data |
 
 ## Weapons & items
 
 | # | Topic | Question | GDD |
 |---|-------|----------|-----|
-| Q20 | Weight | What does weapon Weight do (SPD penalty vs CON/STR)? | weapons |
+| Q20 | Weight | **DECIDED:** Weight lowers Attack Speed (see Q4). | weapons |
 | Q21 | Range | No attack range per weapon type (Bow 2, Tome 1–2, ...). | weapons |
 | Q22 | Durability | Weapons have no uses/durability. Intentional? | weapons |
 | Q23 | Weapon list | Individual weapons (Iron Sword, Steel Lance, Fire Tome) are referenced but not defined. | weapons |
@@ -63,16 +65,16 @@ update the GDD it points to.
 | # | Topic | Question | GDD |
 |---|-------|----------|-----|
 | Q24 | Brave Heart | Table: unlocked on promotion. Code sample: Hero Lv ≥ 5. | skill-system |
-| Q25 | Burn | Flame Nova applies Burn; Burn is not a defined status. | skill-system, status-effects |
+| Q25 | Burn | **DECIDED:** Burn = standing on a Burning tile or hit by a fire crit. | skill-system, status-effects |
 | Q26 | "X" values | Many statuses use "+X" / "−X". Need numbers. | status-effects |
-| Q28 | Tick timing | Do statuses tick at the start of the unit's phase or in the Environment Phase? | status-effects |
+| Q28 | Tick timing | **DECIDED:** Status and terrain tick in the Environment Phase. | status-effects |
 
 ## AI, maps, save
 
 | # | Topic | Question | GDD |
 |---|-------|----------|-----|
 | Q33 | AI scoring | "Damage potential" and "survive retaliation" have no point values. | enemy-ai |
-| Q34 | Tie-break | Equal scores → which target? Needed for deterministic tests. | enemy-ai |
+| Q34 | Tie-break | **DECIDED:** Tie-break: can kill → lowest HP → nearest → lowest id. | enemy-ai |
 | Q35 | Movement penalties | "Struggles with" has no numbers (extra cost? impassable?). | terrain-and-maps |
 | Q36 | Desert | Move cost 2–3: which classes pay 3? | terrain-and-maps |
 | Q37 | Ch.1 map | Only 4 of 12 rows drawn; no enemy positions. | terrain-and-maps |

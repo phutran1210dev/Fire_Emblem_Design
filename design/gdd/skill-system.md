@@ -3,6 +3,9 @@
 > Merged from: `Skill_System.md`, `Skill_Resolution_Flow.md`, `ClassSkillTree.md`,
 > `Diagram_Summary.md` (section 5). Diagram: [skill-resolution-flowchart.png](../diagrams/skill-resolution-flowchart.png)
 
+> **Approved change (2026-11-21, [review](../reviews/2026-11-21-gameplay-differentiation.md)):** P3 Momentum: shared team pool 0–10 replaces MP/SP. Active skills cost 2–6, Tier 5 ultimate costs 10; passives and reactions free; cooldowns stay.
+> Not yet written into the sections below — next `/design-system` pass.
+
 ## Overview
 
 Skills are learned through levels, promotion, scrolls and events. A unit can

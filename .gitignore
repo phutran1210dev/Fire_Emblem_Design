@@ -176,3 +176,6 @@ $RECYCLE.BIN/
 
 # Archify working folders (candidates, receipts)
 .archify/
+
+# Godot
+.godot/

@@ -33,3 +33,43 @@ project:
 modes:
   rigor: standard
   automation: guided
+
+engine:
+  name: "Godot"
+  version: "4.7.2"
+  language: "GDScript"
+  rendering: "Forward+"
+  physics: "Jolt"
+
+specialists:
+  code: "godot-gdscript-specialist"
+  shader: "godot-shader-specialist"
+  ui: "godot-specialist"
+  additional: ["godot-gdextension-specialist"]
+
+naming:
+  classes: PascalCase
+  variables: snake_case
+  constants: SCREAMING_SNAKE
+  signals: past_tense
+  files: snake_case
+  scenes: snake_case
+
+commands:
+  build: "[TO BE CONFIGURED]"   # TODO: no export preset exists yet; set `godot --headless --export-debug '<PRESET>'` once export_presets.cfg exists
+  test: "godot --headless -s -d --remote-debug tcp://127.0.0.1:0 res://addons/gdUnit4/bin/GdUnitCmdTool.gd -a res://tests --ignoreHeadlessMode"
+  run: "godot --path . --windowed --resolution 1280x720"
+  smoke: "godot --headless --quit-after 5"
+
+testing:
+  framework: gdunit4
+
+platform:
+  targets: [PC]
+  primary_input: "Keyboard/Mouse"
+  gamepad_support: "Partial"
+  touch_support: "None"
+
+performance:
+  target_framerate: 60
+  frame_budget_ms: 16.67

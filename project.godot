@@ -1,0 +1,13 @@
+; Engine configuration file.
+; Created by /setup-engine. Do not edit by hand unless you know the format.
+config_version=5
+
+[application]
+
+; run/main_scene is unset on purpose: no scene exists yet. /dev-story or you set it once one does.
+config/name="Fire Emblem Design"
+config/features=PackedStringArray("4.7", "Forward Plus")
+
+[rendering]
+
+renderer/rendering_method="forward_plus"
